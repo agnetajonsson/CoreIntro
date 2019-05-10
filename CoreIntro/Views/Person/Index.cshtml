@@ -1,0 +1,21 @@
+﻿@model CoreIntro.Models.Person
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+<h1>Index</h1>
+
+<p>@Model.Name</p>
+<p>@Model.Salary</p>
+
+@if(Model.Salary < 10000)
+{
+    <p>Haha</p>
+}
+else { 
+<p>Tumbs up!</p>
+}
+
